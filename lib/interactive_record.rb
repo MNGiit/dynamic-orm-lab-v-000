@@ -8,7 +8,7 @@ class InteractiveRecord
   end 
   
   def self.column_names #returns an array of SQL column names
-    DB[:conn].results_as_hash = true
+    DB[:conn].results_as_hash = true #.results as hash is part of a ruby gem
  
     sql = "PRAGMA table_info('#{table_name}')" #SQL query for table names
  
