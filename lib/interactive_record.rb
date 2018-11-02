@@ -4,7 +4,7 @@ require 'active_support/inflector'
 class InteractiveRecord
   
   def self.table_name #method returns a name for table
-    self.to_s.downcase.pluralize #turns class object into a string, downcase, and pluralize it
+    self.to_s.downcase.pluralize #turns Class name into a string, downcase, and pluralize it
   end 
   
   def self.column_names
