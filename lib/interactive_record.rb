@@ -17,7 +17,7 @@ class InteractiveRecord
     column_names = []
  
     table_info.each do |column|
-      column_names << column["name"] #each hash has a name key that points to a value
+      column_names << column["name"] #each hash has a name key that points to a value of the column name
     end
     column_names.compact
   end
