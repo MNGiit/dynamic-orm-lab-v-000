@@ -61,7 +61,7 @@ class InteractiveRecord
       WHERE #{key} = "#{value}"
       LIMIT 1
     SQL
-    
+    DB[:conn].execute(sql)
     binding.pry
     
   end
