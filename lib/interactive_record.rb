@@ -22,6 +22,8 @@ class InteractiveRecord
     column_names.compact #.compact gets rid of any nil values
   end
   
-  
+  def table_name_for_insert
+    self.class.table_name
+  end
   
 end
