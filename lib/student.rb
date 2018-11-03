@@ -15,8 +15,6 @@ class Student < InteractiveRecord #Student inherits from InteractiveRecord
     attr_accessor col_name.to_sym
   end
   
-  def table_name_for_insert
-    
-  end
+
   
 end
