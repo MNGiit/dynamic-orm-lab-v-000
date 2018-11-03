@@ -19,7 +19,7 @@ class InteractiveRecord
     table_info.each do |column|
       column_names << column["name"] #each hash has a name key that points to a value of the column name
     end
-    column_names.compact
+    column_names.compact #.compact gets rid of any nil values
   end
 
 end
