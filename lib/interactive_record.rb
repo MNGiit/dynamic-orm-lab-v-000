@@ -53,7 +53,6 @@ class InteractiveRecord
   end
   
   def self.find_by(hash)
-    item = hash[0][1]
     binding.pry
     
   end
