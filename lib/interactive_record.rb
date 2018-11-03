@@ -38,7 +38,9 @@ class InteractiveRecord
     end
     values.join(", ")
   end
-
+  
+  
+  #uses methods previously written like table_name_for_insert, for table column and values
   def save
     sql = "INSERT INTO #{table_name_for_insert} (#{col_names_for_insert}) VALUES (#{values_for_insert})"
  
