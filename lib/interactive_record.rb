@@ -56,7 +56,11 @@ class InteractiveRecord
     key = hash.keys
     value = hash.values
     
-    
+    sql =<<-SQL
+      SELECT * FROM #{self.table_name}
+      WHERE #{key} = "#{value}"
+      LIMIT 1
+    SQL
     
     binding.pry
     
