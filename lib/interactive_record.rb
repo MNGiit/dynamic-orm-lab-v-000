@@ -22,4 +22,6 @@ class InteractiveRecord
     column_names.compact #.compact gets rid of any nil values
   end
   
+  
+  
 end
