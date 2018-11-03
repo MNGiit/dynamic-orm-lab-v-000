@@ -62,7 +62,7 @@ class InteractiveRecord
       LIMIT 1
     SQL
     DB[:conn].execute(sql)
-    binding.pry
+    #binding.pry
     
   end
 end
