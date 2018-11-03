@@ -53,8 +53,8 @@ class InteractiveRecord
   end
   
   def self.find_by(hash)
-    key = hash.keys
-    value = hash.values
+    key = hash.keys.first
+    value = hash.values.first
     
     sql =<<-SQL
       SELECT * FROM #{self.table_name}
